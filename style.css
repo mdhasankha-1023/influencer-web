@@ -1,0 +1,303 @@
+/* import fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+/*------------------
+     common styles
+  -------------------- */
+
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+a {
+    text-decoration: none;
+    color: #3A3A3A;
+}
+
+.btn-common {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    background: #E02C6D;
+    border-radius: 41px;
+    padding: 10px 8px 10px 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.padding {
+    margin-left: 8px;
+    padding-right: 24px;
+}
+
+.star {
+    color: #FB8200;
+    height: 10px;
+    width: 11px;
+    margin-left: 3px;
+}
+
+span {
+    margin-left: 8px;
+}
+
+
+
+
+
+
+/* header styles */
+.header {
+    background-image: url(./images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+/* navigation-bar styles */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 71px 120px 0px 120px;
+}
+
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu ul li {
+    list-style: none;
+    margin-left: 34px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.field {
+    margin-left: 34px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* banner styles */
+
+.banner {
+    display: flex;
+    gap: 133px;
+}
+
+.banner-info {
+    padding: 102px 0px 0px 120px;
+
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 52px;
+    color: #3A3A3A;
+    margin-bottom: 16px;
+}
+
+.banner-des {
+    font-size: 16px;
+    line-height: 24px;
+    color: #3A3A3A;
+    margin-bottom: 16px;
+}
+
+.banner-pic {
+    padding: 145px 120px 0px 0px;
+}
+
+/* e-commarce-site styles */
+
+.e-commarce-site {
+    padding: 0px 100px;
+    margin-top: 100px;
+
+}
+
+.site-pic {
+    padding: 34px 62px;
+    border-top: 1px solid #929090a9;
+    border-bottom: 1px solid #929090a9;
+    border-radius: 95px;
+}
+
+.ecommarce {
+    margin-left: 40px;
+    height: 40px;
+    width: 99px;
+
+
+}
+
+/* popular collection styles */
+
+.thambnail img {
+    height: 256px;
+    width: 300px;
+    border-radius: 5px;
+
+}
+
+.thambnail-title {
+    font-weight: 500;
+    font-size: 28px;
+    color: #18191F;
+    margin-bottom: 6px;
+}
+
+.value {
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.feedback {
+    padding: 16px 0px;
+}
+
+.thambnail-ds {
+    font-weight: 700;
+    font-size: 14px;
+    color: #787885;
+}
+
+.product {
+    padding: 74px 196px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-bottom: 100px;
+}
+
+.product-pic {
+    padding: 17px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* featur plan styles */
+
+.future-plan {
+    padding: 0px 165px;
+    margin-bottom: 100px;
+}
+
+.fu-title {
+    font-weight: 700;
+    font-size: 38px;
+    color: #0A0826;
+}
+
+.fu-ds {
+    font-weight: 700;
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+.fu-item {
+    display: flex;
+    gap: 96px;
+}
+
+/* footer styles */
+
+footer {
+    background-color: #0A0826;
+}
+
+.foot-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.foot-ds {
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    color: #D9DBE1;
+}
+
+.foot-text {
+    padding: 30px 536px 36px;
+}
+
+.feild {
+    width: 32px;
+    height: 32px;
+    background-color: #23213C;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 16px;
+}
+
+.social-icon {
+    text-align: center;
+}
+
+/* media quaris setup */
+
+/* mobile devices styles */
+@media only screen and (max-width: 688px) {
+    .nav-bar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .nav-menu ul li {
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        gap: 14px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .banner-pic {
+        width: 100%;
+    }
+
+    .site-pic {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .product {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        width: 100%;
+    }
+
+    .fu-item {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+  
+}
